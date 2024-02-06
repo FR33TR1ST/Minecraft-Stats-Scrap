@@ -35,7 +35,7 @@ print(user.name)
 - spawn: [Spawn Class](#spawn)
 - motion:  => List
 - health: Player Health => Float
-- food: [Food](#food)
+- food: [Food Class](#food)
 - air:  => Integer
 - onground: If Player is OnGround => Boolean
 - dimension: Player Dimension => String
