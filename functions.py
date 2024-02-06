@@ -4,7 +4,7 @@ import json
 
 class UserStats:
     def __init__(self, uuid):
-        player_data = f'playerdata/{uuid}.dat'
+        player_data = f'{uuid}.dat'
         self.file_location = player_data
         self.file = load(self.file_location)
         self.invulnerable = bool(self.file['Invulnerable'])
@@ -41,7 +41,7 @@ class UserStats:
         self.selected_item_slot = int(self.file['SelectedItemSlot'])
         self.inventory = self.Inventory(inventory_items=self.file['Inventory'])
         self.ender_chest = self.Inventory(inventory_items=self.file['EnderItems'])
-        self.stats_file = json.load(open(f'stats/{uuid}.json'))
+        self.stats_file = json.load(open(f'{uuid}.json'))
         self.stats = self.Stats(values=self.stats_file['stats'])
         self.name, self.profile = self.get_name(self.uuid)
 
