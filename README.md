@@ -86,13 +86,13 @@ print(user.name)
 - inventory.items: [Item Class](#item) List
 
 ##### Item
-- inventory.item[n]: Item Name => String
-- inventory.item[n].id: Item Name => String
-- inventory.item[n].slot: Slot Item => Integer
-- inventory.item[n].count: Item Quantity => Integer
-- inventory.item[n].damage: Item Damage => Integer
-- inventory.item[n].rapaircost: Repair Cost => Integer
-- inventory.item[n].enchantments: Enchantments => Dictionary or None
+- inventory.items[n]: Item Name => String
+- inventory.items[n].id: Item Name => String
+- inventory.items[n].slot: Slot Item => Integer
+- inventory.items[n].count: Item Quantity => Integer
+- inventory.items[n].damage: Item Damage => Integer
+- inventory.items[n].rapaircost: Repair Cost => Integer
+- inventory.items[n].enchantments: Enchantments => Dictionary or None
 
 ##### Stats
 - stats.mined: Mined Blocks => Dictionary
